@@ -1,4 +1,4 @@
-# Blocked Sites in Iran | سایت‌های فیلترشده در ایران 🇮🇷
+# Blocked Sites in Iran | سایت‌های فیلترشده در ایران
 
 A list of domains confirmed to be blocked in Iran — one domain per line, in [`list.txt`](list.txt).
 
