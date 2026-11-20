@@ -1,1 +1,43 @@
-{"lists":[{"data_period":"2026-10","entries":773,"file":"list.txt","last_synced":"2026-11-19","method":"Iran (IR) rows from the newest month in the dataset with >= 20 measurements and >= 50% confirmed blocking; leading www. stripped; deduplicated; sorted.","source":"OONI measurements compiled by Yuix-Networks/blocked-sites-dataset","source_url":"https://raw.githubusercontent.com/Yuix-Networks/blocked-sites-dataset/main/data/latest.csv"},{"entries":57557,"file":"blocked-from-outside.txt","last_synced":"2026-11-19","method":"Release asset ir.txt: '+.'-prefixed entries with the prefix stripped; bare TLDs dropped; deduplicated; sorted.","source":"Chocolate4U/Iran-clash-rules (from bootmortis/iran-hosted-domains, official IR registries)","source_url":"https://github.com/Chocolate4U/Iran-clash-rules/releases/latest/download/ir.txt"},{"entries":605,"file":"blocked-by-sanctions.txt","last_synced":"2026-11-19","method":"File 'domains': leading dots stripped; deduplicated; sorted.","source":"freedomofdevelopers/fod","source_url":"https://raw.githubusercontent.com/freedomofdevelopers/fod/master/domains"}]}
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-20T17:42:45Z",
+  "generator": "tools/update_lists.py",
+  "generator_version": "2.1.0",
+  "license": "Data: CC BY-NC-SA 4.0 (see DATA-LICENSE.md); Code: MIT (see LICENSE)",
+  "lists": [
+    {
+      "data_period": "2026-10",
+      "entries": 773,
+      "file": "list.txt",
+      "last_synced": "2026-11-19",
+      "method": "Iran (IR) rows from the newest month in the dataset with >= 20 measurements and >= 50% confirmed blocking; leading www. stripped; deduplicated; sorted.",
+      "source": "OONI measurements compiled by Yuix-Networks/blocked-sites-dataset",
+      "source_url": "https://raw.githubusercontent.com/Yuix-Networks/blocked-sites-dataset/main/data/latest.csv",
+      "status_semantics": "Confirmed blocked in Iran in the data period (OONI measurements).",
+      "sha256": "e8bdab2973ed100f5a6b2576e2fcf3c285ba111a3de08ad518209946aa78ba76",
+      "retrieved_at": "2026-11-20T17:42:45Z"
+    },
+    {
+      "entries": 57557,
+      "file": "blocked-from-outside.txt",
+      "last_synced": "2026-11-19",
+      "method": "Release asset ir.txt: '+.'-prefixed entries with the prefix stripped; bare TLDs dropped; deduplicated; sorted.",
+      "source": "Chocolate4U/Iran-clash-rules (from bootmortis/iran-hosted-domains, official IR registries)",
+      "source_url": "https://github.com/Chocolate4U/Iran-clash-rules/releases/latest/download/ir.txt",
+      "status_semantics": "Iran-hosted domains (official registries). Not individually tested for reachability from outside Iran.",
+      "sha256": "2b9f044747816eb0ebe8e552c0b5b572e20fdf57d53f73b7a7e99830326bafb5",
+      "retrieved_at": "2026-11-20T17:42:45Z"
+    },
+    {
+      "entries": 605,
+      "file": "blocked-by-sanctions.txt",
+      "last_synced": "2026-11-19",
+      "method": "File 'domains': leading dots stripped; deduplicated; sorted.",
+      "source": "freedomofdevelopers/fod",
+      "source_url": "https://raw.githubusercontent.com/freedomofdevelopers/fod/master/domains",
+      "status_semantics": "Historical / community-reported: the service has blocked Iran at some point; current blocking is not guaranteed.",
+      "sha256": "3bec8b21753adefe0e885e4d2a94206f53d15e451ee97eb05c2bff3af24a81fc",
+      "retrieved_at": "2026-11-20T17:42:45Z"
+    }
+  ]
+}
