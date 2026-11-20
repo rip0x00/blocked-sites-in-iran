@@ -4,6 +4,9 @@ on:
   push:
   pull_request:
 
+permissions:
+  contents: read
+
 jobs:
   validate:
     runs-on: ubuntu-latest
@@ -14,3 +17,5 @@ jobs:
           python-version: "3.x"
       - name: Validate domain lists
         run: python3 tools/validate_lists.py
+      - name: Run unit tests
+        run: python3 -m unittest discover -s tests -v
