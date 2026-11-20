@@ -1,0 +1,25 @@
+NOTICE — upstream attributions
+
+This repository compiles domain lists from three upstream projects. All
+credit for the underlying data belongs to them:
+
+1. OONI (Open Observatory of Network Interference) — https://ooni.org
+   Measurement data on network interference, collected by probes worldwide.
+   Compiled into a per-domain dataset by Yuix-Networks/blocked-sites-dataset:
+   https://github.com/Yuix-Networks/blocked-sites-dataset
+   Contributes: list.txt and data/domains.jsonl (domains confirmed blocked
+   inside Iran). License: CC BY-NC-SA 4.0.
+
+2. bootmortis/iran-hosted-domains — https://github.com/bootmortis/iran-hosted-domains
+   Domains hosted in Iran, gathered from the official Iranian domain
+   registries (ITO / Enamad), distributed in cleaned routing-list form by
+   Chocolate4U/Iran-clash-rules:
+   https://github.com/Chocolate4U/Iran-clash-rules
+   Contributes: blocked-from-outside.txt.
+
+3. freedomofdevelopers/fod — https://github.com/freedomofdevelopers/fod
+   Community-maintained list of foreign services that block Iranian users
+   (sanctions / geo-blocking).
+   Contributes: blocked-by-sanctions.txt.
+
+See DATA-LICENSE.md for the license terms that apply to the compiled data.
