@@ -1,0 +1,46 @@
+name: Incorrect entry
+description: A domain is listed but should not be (no longer blocked, wrong list, or never blocked).
+title: "[Incorrect entry] "
+labels: ["data", "incorrect-entry"]
+body:
+  - type: input
+    id: domain
+    attributes:
+      label: Domain
+      description: The exact domain as it appears in the list.
+      placeholder: example.com
+    validations:
+      required: true
+  - type: dropdown
+    id: list
+    attributes:
+      label: Which list is it in?
+      options:
+        - list.txt (blocked in Iran)
+        - blocked-from-outside.txt (Iran-hosted)
+        - blocked-by-sanctions.txt (services blocking Iran)
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: What did you test (site, page, DNS, HTTPS), what did you observe, and why does that show the entry is wrong?
+      placeholder: "Opened https://example.com from Tehran — loads normally, no block page…"
+    validations:
+      required: true
+  - type: input
+    id: tested_from
+    attributes:
+      label: Tested from
+      description: Country and, if inside Iran, the ISP or network.
+      placeholder: "Iran — Shatel Mobile"
+    validations:
+      required: true
+  - type: input
+    id: date_tested
+    attributes:
+      label: Date tested
+      placeholder: "2026-11-20"
+    validations:
+      required: true
