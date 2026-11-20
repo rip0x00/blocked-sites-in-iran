@@ -62,7 +62,7 @@ import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
-GENERATOR_VERSION = "2.1.0"
+GENERATOR_VERSION = "2.1.1"
 LICENSE_LINE = "Data: CC BY-NC-SA 4.0 (see DATA-LICENSE.md); Code: MIT (see LICENSE)"
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -400,8 +400,15 @@ def main() -> int:
         entry.update(SOURCES[name])
         entry["file"] = name
         entry["entries"] = len(new)
-        entry["sha256"] = hashlib.sha256(raw[name]).hexdigest()
-        entry["retrieved_at"] = retrieved_at
+        new_sha = hashlib.sha256(raw[name]).hexdigest()
+        entry["sha256"] = new_sha
+        old_entry = meta_by_file.get(name, {})
+        if old_entry.get("sha256") == new_sha and old_entry.get("retrieved_at"):
+            # Same source snapshot as last time: keep the original
+            # retrieval time so a no-change run produces no diff.
+            entry["retrieved_at"] = old_entry["retrieved_at"]
+        else:
+            entry["retrieved_at"] = retrieved_at
         if name == "list.txt":
             entry["data_period"] = data_period
         if new != currents[name]:
@@ -442,15 +449,20 @@ def main() -> int:
 
     new_meta = {
         "schema_version": 1,
-        "generated_at": retrieved_at,
+        "generated_at": meta.get("generated_at", retrieved_at),
         "generator": "tools/update_lists.py",
         "generator_version": GENERATOR_VERSION,
         "license": LICENSE_LINE,
         "lists": new_meta_lists,
     }
-    (ROOT / "lists.json").write_text(
-        json.dumps(new_meta, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
-    )
+    serialized = json.dumps(new_meta, indent=2, ensure_ascii=False) + "\n"
+    meta_path = ROOT / "lists.json"
+    if not (meta_path.exists() and meta_path.read_text(encoding="utf-8") == serialized):
+        # Something material changed: stamp a fresh generation time.
+        new_meta["generated_at"] = retrieved_at
+        serialized = json.dumps(new_meta, indent=2, ensure_ascii=False) + "\n"
+        meta_path.write_text(serialized, encoding="utf-8")
+        print("lists.json updated.")
 
     if changed:
         changelog = ROOT / "CHANGELOG.md"
