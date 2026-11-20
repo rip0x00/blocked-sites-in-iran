@@ -1,0 +1,29 @@
+name: Source problem
+description: An upstream source is down, changed its format, or its data looks wrong.
+title: "[Source problem] "
+labels: ["source"]
+body:
+  - type: dropdown
+    id: source
+    attributes:
+      label: Which upstream source?
+      options:
+        - OONI / Yuix-Networks blocked-sites-dataset (list.txt)
+        - bootmortis / Chocolate4U Iran-clash-rules (blocked-from-outside.txt)
+        - freedomofdevelopers/fod (blocked-by-sanctions.txt)
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: What is wrong?
+      description: What did you observe — the source is unreachable, its format changed, entries look corrupted? Include links or error messages if you have them.
+    validations:
+      required: true
+  - type: input
+    id: date_tested
+    attributes:
+      label: Date observed
+      placeholder: "2026-11-20"
+    validations:
+      required: true
