@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blocked Sites in Iran — Lists &amp; Downloads</title>
+<style>
+  body { font-family: system-ui, sans-serif; margin: 2rem auto; max-width: 44rem; padding: 0 1rem; line-height: 1.55; }
+  code { background: #f0f0f0; padding: 0.1em 0.35em; border-radius: 4px; }
+  li { margin: 0.35rem 0; }
+  .fa { direction: rtl; text-align: right; }
+</style>
+</head>
+<body>
+<h1>Blocked Sites in Iran</h1>
+<p>Reference lists of blocked domains around Iran, rebuilt weekly from public
+measurement and registry sources. Full documentation, method and caveats live in the
+<a href="https://github.com/rip0x00/blocked-sites-in-iran">GitHub repository</a>.</p>
+
+<h2>Downloads</h2>
+<ul>
+  <li><a href="https://raw.githubusercontent.com/rip0x00/blocked-sites-in-iran/main/list.txt">list.txt</a> — domains confirmed blocked inside Iran (OONI measurements)</li>
+  <li><a href="https://raw.githubusercontent.com/rip0x00/blocked-sites-in-iran/main/blocked-from-outside.txt">blocked-from-outside.txt</a> — Iranian-hosted domains (registry data; not per-domain reachability tests)</li>
+  <li><a href="https://raw.githubusercontent.com/rip0x00/blocked-sites-in-iran/main/blocked-by-sanctions.txt">blocked-by-sanctions.txt</a> — foreign services that have blocked Iran (historical, community-reported)</li>
+  <li><a href="https://raw.githubusercontent.com/rip0x00/blocked-sites-in-iran/main/lists.json">lists.json</a> — per-list metadata: source, method, counts, source SHA-256, last sync</li>
+  <li><a href="https://raw.githubusercontent.com/rip0x00/blocked-sites-in-iran/main/dist/manifest.json">dist/manifest.json</a> — generated formats (JSON, CSV, AdGuard, dnsmasq, hosts, Clash, Surge, sing-box) with hashes</li>
+  <li><a href="https://github.com/rip0x00/blocked-sites-in-iran/actions">GitHub Actions</a> — validation and sync status</li>
+</ul>
+
+<p>Data license: CC BY-NC-SA 4.0 — see <code>DATA-LICENSE.md</code> in the repository.
+A listing is a snapshot from source data, not a live connectivity guarantee;
+a domain missing from a list is usually untested, not necessarily reachable.</p>
+
+<div class="fa">
+<h2>سایت‌های فیلترشده در ایران</h2>
+<p>فهرست‌های مرجع دامنه‌های مسدودشده‌ی مرتبط با ایران که هر هفته از منابع عمومی
+اندازه‌گیری و رجیستری بازسازی می‌شوند. مستندات کامل، روش و محدودیت‌ها در
+<a href="https://github.com/rip0x00/blocked-sites-in-iran">مخزن گیت‌هاب</a> است.
+لینک‌های دانلود همان فهرست بالا هستند.</p>
+</div>
+</body>
+</html>
