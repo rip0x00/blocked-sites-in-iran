@@ -1,0 +1,39 @@
+name: Weekly list sync
+
+on:
+  schedule:
+    - cron: "30 5 * * 1" # Mondays 05:30 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Rebuild lists from upstream sources
+        run: python3 tools/update_lists.py
+      - name: Validate the result
+        run: python3 tools/validate_lists.py
+      - name: Open a pull request if anything changed
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No changes."
+            exit 0
+          fi
+          BRANCH="sync/$(date -u +%F)"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add -A
+          git commit -m "chore: weekly list sync ($(date -u +%F))"
+          git push origin "$BRANCH"
+          gh pr create --title "Weekly list sync ($(date -u +%F))" --body "Automated rebuild of the lists from their upstream sources. The update script refuses empty results and changes over 25 percent; validation passed in this workflow before this PR was opened. Review the diff, then merge."
