@@ -40,6 +40,22 @@ Domains hosted in Iran, gathered from official Iranian domain registries (ITO / 
 
 The other direction of the wall: foreign (mostly US) services that geo-block Iranian users on their own side because of sanctions, compiled by [freedomofdevelopers](https://github.com/freedomofdevelopers/fod). Developer-focused and community-maintained — individual entries age: some services later obtained licences and reopened to Iran (for example GitHub), so treat an entry as "has blocked Iran" rather than a live guarantee.
 
+### List status and updates
+
+| File | Entries | Source | Last synced |
+|---|---|---|---|
+| `list.txt` | 773 | OONI measurements (via Yuix-Networks/blocked-sites-dataset), data month 2026-10 | 2026-11-19 |
+| `blocked-from-outside.txt` | 57,557 | Chocolate4U/Iran-clash-rules (from bootmortis/iran-hosted-domains) | 2026-11-19 |
+| `blocked-by-sanctions.txt` | 605 | freedomofdevelopers/fod (community-maintained; entries age) | 2026-11-19 |
+
+The same metadata lives in machine-readable form in [`lists.json`](lists.json), and every change is recorded in [`CHANGELOG.md`](CHANGELOG.md).
+
+How the lists stay current:
+
+- [`tools/update_lists.py`](tools/update_lists.py) rebuilds all three lists from the upstream sources above. It refuses to publish a list that comes back empty or changes by more than 25% at once, which would mean an upstream format change rather than real-world change.
+- A GitHub Actions workflow re-runs that sync **weekly** and commits the result; [`tools/validate_lists.py`](tools/validate_lists.py) checks format, duplicates, ordering and the `lists.json` counts on every push and pull request.
+- "Last synced" is the date a list's contents were last rebuilt from its source — for the sanctions list especially, a sync date is not a per-entry guarantee: an entry means the service has blocked Iran at some point, not that it necessarily still does.
+
 ### Notes
 
 - Blocking changes over time on all three sides. These lists are snapshots, not permanent truths.
@@ -71,6 +87,22 @@ The other direction of the wall: foreign (mostly US) services that geo-block Ira
 ### `blocked-by-sanctions.txt` — سرویس‌هایی که ایران را بلاک کرده‌اند
 
 جهت برعکس دیوار: سرویس‌های خارجی (بیشتر آمریکایی) که به‌خاطر تحریم‌ها خودشان کاربر ایرانی را جئوبلاک می‌کنند؛ گردآوری‌شده توسط [freedomofdevelopers](https://github.com/freedomofdevelopers/fod). این لیست جامعه‌محور و توسعه‌دهنده‌محور است و تک‌تک موردهایش ممکن است کهنه شده باشد: بعضی سرویس‌ها بعداً مجوز گرفتند و به روی ایران باز شدند (مثلاً گیت‌هاب) — پس هر مورد را «سابقه‌ی بلاک کردن ایران» بدان، نه تضمین لحظه‌ای.
+
+### وضعیت و به‌روزرسانی لیست‌ها
+
+| فایل | دامنه | منبع | آخرین همگام‌سازی |
+|---|---|---|---|
+| `list.txt` | ۷۷۳ | اندازه‌گیری‌های OONI (از طریق Yuix-Networks/blocked-sites-dataset)، داده‌ی ماه ۲۰۲۶-۱۰ | ۲۰۲۶-۱۱-۱۹ |
+| `blocked-from-outside.txt` | ۵۷٬۵۵۷ | ‏Chocolate4U/Iran-clash-rules (از روی bootmortis/iran-hosted-domains) | ۲۰۲۶-۱۱-۱۹ |
+| `blocked-by-sanctions.txt` | ۶۰۵ | ‏freedomofdevelopers/fod (جامعه‌محور؛ موردهایش کهنه می‌شود) | ۲۰۲۶-۱۱-۱۹ |
+
+همین اطلاعات به‌صورت ماشین‌خوان در [`lists.json`](lists.json) هست و همه‌ی تغییرات در [`CHANGELOG.md`](CHANGELOG.md) ثبت می‌شود.
+
+لیست‌ها چطور تازه می‌مانند:
+
+- اسکریپت [`tools/update_lists.py`](tools/update_lists.py) هر سه لیست را از منابع بالا از نو می‌سازد و اگر لیستی خالی برگردد یا یک‌باره بیش از ۲۵٪ تغییر کند (که یعنی قالب منبع عوض شده، نه دنیای واقعی) جلوی انتشارش را می‌گیرد.
+- یک گردش‌کار GitHub Actions این همگام‌سازی را **هفته‌ای یک‌بار** خودکار انجام می‌دهد و نتیجه را کامیت می‌کند؛ اسکریپت [`tools/validate_lists.py`](tools/validate_lists.py) هم در هر پوش و پول‌ریکوئست قالب، تکراری‌نبودن، ترتیب و شمارش `lists.json` را بررسی می‌کند.
+- «آخرین همگام‌سازی» تاریخی است که محتوای لیست آخرین بار از منبعش بازسازی شده — مخصوصاً در لیست تحریم‌ها، این تاریخ تضمین تک‌تک موردها نیست: بودن یک سرویس در لیست یعنی زمانی ایران را بلاک کرده، نه اینکه حتماً هنوز هم بلاک می‌کند.
 
 ### نکات
 
