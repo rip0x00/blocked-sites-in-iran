@@ -1,0 +1,126 @@
+{
+  "generated_at": "2026-11-20T17:43:02Z",
+  "generator": "tools/build_dist.py",
+  "files": {
+    "blocked-in-iran.json": {
+      "entries": 773,
+      "sha256": "5f01c08f06692e057f456f17be3ef40974cc5d94ac326795d8a8935fdb353f54",
+      "bytes": 14989
+    },
+    "blocked-in-iran.csv": {
+      "entries": 773,
+      "sha256": "7a59b04968d34ecc46e587b8dea2f0eb6c3eca38f7769f35a6f2c2f0f2dd6e18",
+      "bytes": 11128
+    },
+    "blocked-in-iran.adguard.txt": {
+      "entries": 773,
+      "sha256": "94dc936cae96c7acc90d13901f65d5b6c50d314476641310b5759e967aaf9c61",
+      "bytes": 13526
+    },
+    "blocked-in-iran.dnsmasq.conf": {
+      "entries": 773,
+      "sha256": "0a6205f8de595caa7a8cfa64a7d17956c116e7a44890359461341a43b204b230",
+      "bytes": 18164
+    },
+    "blocked-in-iran.hosts": {
+      "entries": 773,
+      "sha256": "25eb5c4fdb3547b5a72f24b229f9374a406f309991b9cab65bdcacd9e5b2adf0",
+      "bytes": 17391
+    },
+    "blocked-in-iran.clash.yaml": {
+      "entries": 773,
+      "sha256": "6ea7fdac61892367ec9a63f3075585df2e0b2c4f6e95faf31798d37a04fe4e4a",
+      "bytes": 26590
+    },
+    "blocked-in-iran.surge.conf": {
+      "entries": 773,
+      "sha256": "536a193b331f04ec773bd9887743b902d979f8181a85ee80de221b742638e302",
+      "bytes": 22029
+    },
+    "blocked-in-iran.sing-box.json": {
+      "entries": 773,
+      "sha256": "3affbc6364fcb0e28858797897f5a87559c111232ebf5aa3028609687a9f52f5",
+      "bytes": 19705
+    },
+    "iran-hosted.json": {
+      "entries": 57557,
+      "sha256": "afffcdd48808fff308aadfbbdd0d16c0a70b3f359b86f895cfe97d309b15e671",
+      "bytes": 1131216
+    },
+    "iran-hosted.csv": {
+      "entries": 57557,
+      "sha256": "2867ddc550cc93a37a227a58ed9f3cb7773b1d98a05376efc88bfec69785f598",
+      "bytes": 843435
+    },
+    "iran-hosted.adguard.txt": {
+      "entries": 57557,
+      "sha256": "91b1bed5d1724de64a8e16465c408a307cf89fc824bce2839f83b336193d8ae4",
+      "bytes": 1016226
+    },
+    "iran-hosted.dnsmasq.conf": {
+      "entries": 57557,
+      "sha256": "d6824dc6a14440b4019ef2a19df0e4499b48b727c17ad38438b7ab6ae1fcfe1f",
+      "bytes": 1361568
+    },
+    "iran-hosted.hosts": {
+      "entries": 57557,
+      "sha256": "76deea09338132856d9ca3d0f373b152b89a79722a1e5968a40a1adf1a7428ef",
+      "bytes": 1304011
+    },
+    "iran-hosted.clash.yaml": {
+      "entries": 57557,
+      "sha256": "3485f0094669325a1ffb7ae96495e3b0dab2a2dd92da982eae7fae13357e36a1",
+      "bytes": 1994577
+    },
+    "iran-hosted.surge.conf": {
+      "entries": 57557,
+      "sha256": "835e8b92235ac485c9692be82093b1fc83b2d51b82a089d28e5e232a4c4df3e5",
+      "bytes": 1649353
+    },
+    "iran-hosted.sing-box.json": {
+      "entries": 57557,
+      "sha256": "951abab92688ff09ede056d908ea4b0944f0a3caf170f4aa52e9ab23276baf85",
+      "bytes": 1476636
+    },
+    "sanctions.json": {
+      "entries": 605,
+      "sha256": "760461ffd872c098fbf8a3aa2c27aad8d5a060eb31468858143c87c463574d7d",
+      "bytes": 11028
+    },
+    "sanctions.csv": {
+      "entries": 605,
+      "sha256": "c9fad051eca3ded52105b98b2caa162d42429a55e21f54f64fd8b3c838c164a6",
+      "bytes": 8007
+    },
+    "sanctions.adguard.txt": {
+      "entries": 605,
+      "sha256": "3360d811b34bddbf70c6e05bb19bbb5a4098bfc232d4426ba4cc290757b8d807",
+      "bytes": 9969
+    },
+    "sanctions.dnsmasq.conf": {
+      "entries": 605,
+      "sha256": "79b1d58e499b072d1eb5f14cb58ecbed37f150e20e8f3c472cd7b29be905d6bd",
+      "bytes": 13599
+    },
+    "sanctions.hosts": {
+      "entries": 605,
+      "sha256": "bfdf314d83d512b5f0141096d389e8e47ce90dd34c3571f39a4a7cc87e73e6d6",
+      "bytes": 12994
+    },
+    "sanctions.clash.yaml": {
+      "entries": 605,
+      "sha256": "c65b08acab5b08fc405f2e2662b1d3461a57460dda92e7e714fd0989ed2c76a8",
+      "bytes": 20109
+    },
+    "sanctions.surge.conf": {
+      "entries": 605,
+      "sha256": "a94c7f3f65863d409d8cf1b27457c817fedf38033027553920db03b0712a55a5",
+      "bytes": 16624
+    },
+    "sanctions.sing-box.json": {
+      "entries": 605,
+      "sha256": "1dbcc6863736002fd0bb5ac790172e7ba6ad556eeb01c79174dcfa8e6d108098",
+      "bytes": 14736
+    }
+  }
+}
