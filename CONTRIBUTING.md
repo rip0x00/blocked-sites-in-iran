@@ -1,1 +1,89 @@
-IyBDb250cmlidXRpbmcKClRoYW5rcyBmb3IgaGVscGluZyBrZWVwIHRoZXNlIGxpc3RzIGFjY3VyYXRlLiBNb3N0IGNvbnRyaWJ1dGlvbnMgYXJlIGRhdGEKcmVwb3J0cywgbm90IGNvZGUg4oCUIGJvdGggYXJlIHdlbGNvbWUuCgojIyBSZXBvcnRpbmcgYSB3cm9uZyBvciBtaXNzaW5nIGRvbWFpbgoKT3BlbiBhbiBpc3N1ZSB1c2luZyB0aGUgbWF0Y2hpbmcgdGVtcGxhdGU6CgotICoqSW5jb3JyZWN0IGVudHJ5Kiog4oCUIGEgZG9tYWluIGlzIGxpc3RlZCBidXQgc2hvdWxkIG5vdCBiZS4KLSAqKk1pc3NpbmcgZW50cnkqKiDigJQgYSBkb21haW4gaXMgYmxvY2tlZCAob3IgYmxvY2tzIElyYW4pIGJ1dCBpcyBub3QgbGlzdGVkLgotICoqU291cmNlIHByb2JsZW0qKiDigJQgYW4gdXBzdHJlYW0gc291cmNlIGlzIGRvd24sIGNoYW5nZWQgZm9ybWF0LCBvciB3cm9uZy4KCkV2aWRlbmNlIG1hdHRlcnMgbW9yZSB0aGFuIHZvbHVtZS4gRm9yIGV2ZXJ5IHJlcG9ydCwgcGxlYXNlIGluY2x1ZGU6CgotIHRoZSBleGFjdCBkb21haW4sCi0gd2hhdCB5b3UgdGVzdGVkICh0aGUgc2l0ZSBpdHNlbGY/IGEgc3BlY2lmaWMgcGFnZT8gRE5TPyBIVFRQUz8pLAotIHdoZXJlIHlvdSB0ZXN0ZWQgZnJvbSAoaW5zaWRlIElyYW4gLyB3aGljaCBjb3VudHJ5LCBhbmQgdGhlIElTUCBpZiB5b3UKICBrbm93IGl0KSwKLSB3aGVuIHlvdSB0ZXN0ZWQgKGRhdGUpLAotIHdoYXQgeW91IG9ic2VydmVkIChibG9jayBwYWdlLCB0aW1lb3V0LCBnZW8tYmxvY2sgbWVzc2FnZSwgSFRUUCBzdGF0dXPigKYpLgoKQSByZXBvcnQgdGhhdCBqdXN0IHNheXMgInRoaXMgc2l0ZSB3b3JrcyBmb3IgbWUiIHdpdGhvdXQgdGhlIGRldGFpbHMgYWJvdmUKaXMgaGFyZCB0byBhY3Qgb246IGJsb2NraW5nIGRpZmZlcnMgcGVyIElTUCwgcGVyIHByb3RvY29sIGFuZCBvdmVyIHRpbWUuCgojIyBSdW5uaW5nIHRoZSBjaGVja3MgbG9jYWxseQoKUmVxdWlyZW1lbnRzOiBQeXRob24gMy4xMCBvciBuZXdlci4gTm8gdGhpcmQtcGFydHkgZGVwZW5kZW5jaWVzIOKAlCB0aGUgdG9vbHMKdXNlIG9ubHkgdGhlIHN0YW5kYXJkIGxpYnJhcnkuCgpgYGBiYXNoCnB5dGhvbjMgLW0gdmVudiAudmVudgoudmVudi9iaW4vcHl0aG9uIHRvb2xzL3ZhbGlkYXRlX2xpc3RzLnB5ICAgICAgICAgICAgIyBmb3JtYXQgLyBvcmRlciAvIGNvdW50cwoudmVudi9iaW4vcHl0aG9uIC1tIHVuaXR0ZXN0IGRpc2NvdmVyIC1zIHRlc3RzIC12ICAgIyB1bml0IHRlc3RzCi52ZW52L2Jpbi9weXRob24gdG9vbHMvdXBkYXRlX2xpc3RzLnB5IC0tY2hlY2sgICAgICAjIGRyeS1ydW4gc3luYywgd3JpdGVzIG5vdGhpbmcKYGBgCgpBbGwgdGhyZWUgbXVzdCBwYXNzIGJlZm9yZSBhIHB1bGwgcmVxdWVzdCBpcyBtZXJnZWQuIENJIHJ1bnMgdGhlIHZhbGlkYXRvcgphbmQgdGhlIHVuaXQgdGVzdHMgb24gZXZlcnkgcHVzaCBhbmQgcHVsbCByZXF1ZXN0LgoKIyMgUHVsbCByZXF1ZXN0cwoKLSBUaGUgd2Vla2x5IHN5bmMgd29ya2Zsb3cgb3BlbnMgaXRzIG93biBQUnMgZnJvbSBhIGBzeW5jLzxkYXRlPmAgYnJhbmNoIOKAlAogIHJldmlldyB0aGUgZGlmZiBhbmQgbWVyZ2UsIG9yIGNsb3NlIGl0IGlmIHRoZSBjaGFuZ2UgbG9va3Mgd3JvbmcuCi0gTWFudWFsIFBScyBhcmUgd2VsY29tZTogZm9yIGNvZGUsIGZvciBkb2NzLCBhbmQgZm9yIGRvY3VtZW50ZWQgZGF0YSBmaXhlcy4KLSBLZWVwIHRoZSBFbmdsaXNoIGFuZCBQZXJzaWFuIHNlY3Rpb25zIG9mIHRoZSBSRUFETUUgaW4gc3luYyB3aGVuIHlvdSBlZGl0CiAgb25lIG9mIHRoZW0uCi0gSWYgeW91ciBQUiBjaGFuZ2VzIGEgbGlzdCBmaWxlLCB1cGRhdGUgYGxpc3RzLmpzb25gIGFuZCBgQ0hBTkdFTE9HLm1kYCBpbgogIHRoZSBzYW1lIFBSIChydW5uaW5nIGB0b29scy91cGRhdGVfbGlzdHMucHlgIGRvZXMgdGhpcyBmb3Igc291cmNlLWRyaXZlbgogIGNoYW5nZXMpLgoKIyMgUmVtb3ZhbCBwb2xpY3kKCkEgZG9tYWluIGlzIHJlbW92ZWQgd2hlbjoKCi0gaXRzIHVwc3RyZWFtIHNvdXJjZSBzdG9wcyBsaXN0aW5nIGl0ICh0aGUgbmV4dCBzeW5jIHRoZW4gZHJvcHMgaXQpLCBvcgotIGNyZWRpYmxlIGV2aWRlbmNlIHNob3dzIHRoZSBlbnRyeSBpcyB3cm9uZyDigJQgZm9yIGV4YW1wbGUgcmVwZWF0ZWQgdGVzdHMKICBmcm9tIGluc2lkZSBJcmFuIHNob3dpbmcgYSBgbGlzdC50eHRgIGRvbWFpbiBpcyByZWFjaGFibGUgYW5kIHVuZmlsdGVyZWQsCiAgb3IgcHJvb2YgdGhhdCBhIHNhbmN0aW9ucy1saXN0IHNlcnZpY2UgaGFzIHJlb3BlbmVkIHRvIElyYW5pYW4gdXNlcnMuCgpSZW1vdmFscyBmb3IgdGhlIHNlY29uZCByZWFzb24gbmVlZCB0aGUgc2FtZSBldmlkZW5jZSBzdGFuZGFyZCBhcyBhZGRpdGlvbnM6CndoYXQgd2FzIHRlc3RlZCwgZnJvbSB3aGVyZSwgYW5kIHdoZW4uCgojIyBSZWxlYXNlcwoKRGF0ZWQgc25hcHNob3RzIGFyZSBwdWJsaXNoZWQgYXMgR2l0SHViIHJlbGVhc2VzIChgdllZWVkuTU0uRERgKS4gQXR0YWNoIHRoZQpleGFjdCByYXcgdXBzdHJlYW0gaW5wdXRzIHVzZWQgdG8gYnVpbGQgdGhlIHNuYXBzaG90IGFzIHJlbGVhc2UgYXNzZXRzLCBzbwphbnkgcmVsZWFzZSBjYW4gYmUgcmVidWlsdCBhbmQgYXVkaXRlZCBsYXRlcjogYGxpc3RzLmpzb25gIHJlY29yZHMgZWFjaAppbnB1dCdzIFNIQS0yNTYgYW5kIGl0cyB1cHN0cmVhbSBjb21taXQgb3IgcmVsZWFzZSB0YWcgKGBzb3VyY2VfcmVmYCkuCgotLS0KCiMjINmB2KfYsdiz24wg4oCUINmF2LTYp9ix2qnYqgoK2KjbjNi02KrYsSDZhdi02KfYsdqp2KrigIzZh9inINqv2LLYp9ix2LQg2K/Yp9iv2YfigIzYp9mG2K/YjCDZhtmHINqp2K8uINio2LHYp9uMINqv2LLYp9ix2LQg2K/Yp9mF2YbZh+KAjNuMINin2LTYqtio2KfZhyDbjNinINis2KfYp9mB2KrYp9iv2YfYjArYp9iyINmC2KfZhNio4oCM2YfYp9uMINin24zYtNmIINin2LPYqtmB2KfYr9mHINqp2YbbjNivINmIINin24zZhuKAjNmH2Kcg2LHYpyDYqNmG2YjbjNiz24zYrzog2K/Yp9mF2YbZh+KAjNuMINiv2YLbjNmC2Iwg2obZhyDahtuM2LLbjCDYsdinCtiq2LPYqiDaqdix2K/bjNiv2Iwg2KfYsiDaqdis2KcgKNiv2KfYrtmEINin24zYsdin2YYg24zYpyDaqdiv2KfZhSDaqdi02YjYsSDZiCDaqdiv2KfZhSBJU1Ap2Iwg2obZhyDYqtin2LHbjNiu24zYjCDZiCDahtmHCtmF2LTYp9mH2K/ZhyDaqdix2K/bjNivICjYtdmB2K3Zh+KAjNuMINmB24zZhNiq2LHbjNmG2q/YjCDYqtin24zZheKAjNin2YjYqtiMINm+24zYp9mFINis2KbZiNio2YTYp9qpINmI4oCmKS4KCtio2LHYp9uMINin2KzYsdin24wg2KjYsdix2LPbjOKAjNmH2Kcg2KjZhyBQeXRob24gMy4xMCDbjNinINio2KfZhNin2KrYsSDZhtuM2KfYsiDYp9iz2Kog2Ygg2YfbjNqGINmI2KfYqNiz2Krar9uMINiu2KfYsdis24zigIzYp9uMCtmI2KzZiNivINmG2K/Yp9ix2K86CgpgYGBiYXNoCi52ZW52L2Jpbi9weXRob24gdG9vbHMvdmFsaWRhdGVfbGlzdHMucHkKLnZlbnYvYmluL3B5dGhvbiAtbSB1bml0dGVzdCBkaXNjb3ZlciAtcyB0ZXN0cyAtdgpgYGAKCtiv2KfZhdmG2Ycg2YjZgtiq24wg2K3YsNmBINmF24zigIzYtNmI2K8g2qnZhyDZhdmG2KjYuSDYqNin2YTYp9iv2LPYqtuM4oCM2KfYtCDYotmGINix2Kcg2K3YsNmBINqp2LHYr9mHINio2KfYtNiv2Iwg24zYpyDYtNmI2KfZh9ivCtmF2LnYqtio2LEgKNio2Kcg2YfZhdin2YYg2KzYstim24zYp9iqINio2KfZhNinKSDZhti02KfZhiDYr9mH2K8g2YjYsdmI2K/bjCDYp9i02KrYqNin2Ycg2KfYs9iqLgo=
+# Contributing
+
+Thanks for helping keep these lists accurate. Most contributions are data
+reports, not code — both are welcome.
+
+## Reporting a wrong or missing domain
+
+Open an issue using the matching template:
+
+- **Incorrect entry** — a domain is listed but should not be.
+- **Missing entry** — a domain is blocked (or blocks Iran) but is not listed.
+- **Source problem** — an upstream source is down, changed format, or wrong.
+
+Evidence matters more than volume. For every report, please include:
+
+- the exact domain,
+- what you tested (the site itself? a specific page? DNS? HTTPS?),
+- where you tested from (inside Iran / which country, and the ISP if you
+  know it),
+- when you tested (date),
+- what you observed (block page, timeout, geo-block message, HTTP status…).
+
+A report that just says "this site works for me" without the details above
+is hard to act on: blocking differs per ISP, per protocol and over time.
+
+## Running the checks locally
+
+Requirements: Python 3.10 or newer. No third-party dependencies — the tools
+use only the standard library.
+
+```bash
+python3 -m venv .venv
+.venv/bin/python tools/validate_lists.py            # format / order / counts
+.venv/bin/python -m unittest discover -s tests -v   # unit tests
+.venv/bin/python tools/update_lists.py --check      # dry-run sync, writes nothing
+```
+
+All three must pass before a pull request is merged. CI runs the validator
+and the unit tests on every push and pull request.
+
+## Pull requests
+
+- The weekly sync workflow opens its own PRs from a `sync/<date>` branch —
+  review the diff and merge, or close it if the change looks wrong.
+- Manual PRs are welcome: for code, for docs, and for documented data fixes.
+- Keep the English and Persian sections of the README in sync when you edit
+  one of them.
+- If your PR changes a list file, update `lists.json` and `CHANGELOG.md` in
+  the same PR (running `tools/update_lists.py` does this for source-driven
+  changes).
+
+## Removal policy
+
+A domain is removed when:
+
+- its upstream source stops listing it (the next sync then drops it), or
+- credible evidence shows the entry is wrong — for example repeated tests
+  from inside Iran showing a `list.txt` domain is reachable and unfiltered,
+  or proof that a sanctions-list service has reopened to Iranian users.
+
+Removals for the second reason need the same evidence standard as additions:
+what was tested, from where, and when.
+
+## Releases
+
+Dated snapshots are published as GitHub releases (`vYYYY.MM.DD`). Attach the
+exact raw upstream inputs used to build the snapshot as release assets, so
+any release can be rebuilt and audited later: `lists.json` records each
+input's SHA-256 and its upstream commit or release tag (`source_ref`).
+
+---
+
+## فارسی — مشارکت
+
+بیشتر مشارکت‌ها گزارش داده‌اند، نه کد. برای گزارش دامنه‌ی اشتباه یا جاافتاده،
+از قالب‌های ایشو استفاده کنید و این‌ها را بنویسید: دامنه‌ی دقیق، چه چیزی را
+تست کردید، از کجا (داخل ایران یا کدام کشور و کدام ISP)، چه تاریخی، و چه
+مشاهده کردید (صفحه‌ی فیلترینگ، تایم‌اوت، پیام جئوبلاک و…).
+
+برای اجرای بررسی‌ها به Python 3.10 یا بالاتر نیاز است و هیچ وابستگی خارجی‌ای
+وجود ندارد:
+
+```bash
+.venv/bin/python tools/validate_lists.py
+.venv/bin/python -m unittest discover -s tests -v
+```
+
+دامنه وقتی حذف می‌شود که منبع بالادستی‌اش آن را حذف کرده باشد، یا شواهد
+معتبر (با همان جزئیات بالا) نشان دهد ورودی اشتباه است.
