@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-20T18:43:28Z",
+  "generated_at": "2026-11-23T16:18:53Z",
   "generator": "tools/update_lists.py",
   "generator_version": "2.2.0",
   "license": "Data: CC BY-NC-SA 4.0 (see DATA-LICENSE.md); Code: MIT (see LICENSE)",
@@ -28,7 +28,7 @@
       "status_semantics": "Iran-hosted domains (official registries). Not individually tested for reachability from outside Iran.",
       "sha256": "2b9f044747816eb0ebe8e552c0b5b572e20fdf57d53f73b7a7e99830326bafb5",
       "retrieved_at": "2026-11-20T17:42:45Z",
-      "source_ref": "202611201423"
+      "source_ref": "202611221337"
     },
     {
       "entries": 605,
